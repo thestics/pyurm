@@ -70,6 +70,8 @@ def parse_token_stream(input: tp.List[Token]) -> tp.List[Command]:
                 Exception(f"Unexpected tokens after: {cur_token}"))
             cmd = _convert_cmd_tokens_to_cmd([cur_token, *cmd_tokens])
             res.append(cmd)
-
+        else:
+            raise Exception(f"Unexpected token {cur_token}")
+        
         cur_token = input_reader.get_next()
     return res
