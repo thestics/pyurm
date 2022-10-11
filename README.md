@@ -5,15 +5,24 @@ Implementation of simple interpreter for [URM](https://proofwiki.org/wiki/Defini
 with minimal UI
 
 ## Install
-TBD
+```
+git clone git@github.com:thestics/pyurm.git
+cd pyurm
+python3 -m venv venv
+source venv/bin/activate
+
+# to deactivate python venv
+deactivate
+```
 
 ## Run
-TBD
+```pyurm prog1.urm```
 
 ## Features
 - [x] Core functionality
 - [x] File format and syntax definition
-- [ ] Offline run
+- [x] Offline run
+- [ ] Support for comments in src
 - [ ] REPL
 
 ## File format and syntax
