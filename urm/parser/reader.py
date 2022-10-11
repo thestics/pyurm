@@ -7,7 +7,7 @@ class Reader:
         self._cur_idx = 0
 
     def peek_next(self):
-        if self._cur_idx >= len(self._src) - 1:
+        if self._cur_idx >= len(self._src):
             return None
         return self._src[self._cur_idx]
     
